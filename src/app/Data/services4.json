@@ -1,0 +1,32 @@
+[
+  {
+    "icon": "/assets/images/inner/service-icon.png",  
+    "title": "Dedicated IT Staffing",
+    "desc": "Build and manage remote teams of developers, designers, and QA engineers from our secure India office.",
+    "image": "https://images.unsplash.com/photo-1551434678-e076c223a692?w=600&h=400&fit=crop"
+  },
+  {
+    "icon": "/assets/images/inner/service-icon.png",  
+    "title": "Managed Software Teams",
+    "desc": "Complete development department without the overhead of hiring in-house staff. End-to-end software delivery.",
+    "image": "https://images.unsplash.com/photo-1460925895917-afdab827c52f?w=600&h=400&fit=crop"
+  },
+  {
+    "icon": "/assets/images/inner/service-icon.png",  
+    "title": "Web & Mobile App Development",
+    "desc": "Scalable, secure, and high-performance web and mobile apps using Flutter, React, Node.js, Laravel.",
+    "image": "https://images.unsplash.com/photo-1551650975-87deedd944c3?w=600&h=400&fit=crop"
+  },
+  {
+    "icon": "/assets/images/inner/service-icon.png",  
+    "title": "UI/UX & Product Design",
+    "desc": "Digital experiences that engage users and elevate brands with intuitive, visually rich products.",
+    "image": "https://images.unsplash.com/photo-1561070791-2526d30994b5?w=600&h=400&fit=crop"
+  },
+  {
+    "icon": "/assets/images/inner/service-icon.png",  
+    "title": "QA & DevOps",
+    "desc": "High-quality software with faster releases through manual/automated testing and CI/CD pipelines.",
+    "image": "https://images.unsplash.com/photo-1558494949-ef010cbdcc31?w=600&h=400&fit=crop"
+  }  
+]

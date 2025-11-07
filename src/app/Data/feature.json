@@ -1,0 +1,27 @@
+[
+  {
+    "img": "/assets/images/feature1.png",   
+    "title": "17+ Years Experience",
+    "desc": "Global technology experience across UAE, USA, and India."
+  },
+  {
+    "img": "/assets/images/feature2.png",   
+    "title": "Dedicated Teams",
+    "desc": "NDA compliance with secure offshore delivery center."
+  },
+  {
+    "img": "/assets/images/feature3.png",   
+    "title": "Full-Stack Expertise",
+    "desc": "SaaS, web, and mobile app development capabilities."
+  },
+  {
+    "img": "/assets/images/feature4.png",   
+    "title": "Flexible Models",
+    "desc": "Dedicated Teams, Managed Software, or Fixed Projects."
+  },
+  {
+    "img": "/assets/images/feature5.png",   
+    "title": "Transparent Pricing",
+    "desc": "Performance-driven results with measurable milestones."
+  }
+]

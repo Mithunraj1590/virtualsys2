@@ -1,0 +1,16 @@
+.next/
+out/
+node_modules/
+package-lock.json
+npm-debug.log*
+yarn-error.log*
+.turbo/
+.vscode/
+.idea/
+*.log
+*.DS_Store
+Thumbs.db
+dist/
+coverage/
+/.cursor/
+
