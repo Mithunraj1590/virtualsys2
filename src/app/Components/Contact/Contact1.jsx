@@ -55,10 +55,10 @@ const Contact1 = () => {
                             <div className="section-title text-left">
                             <SectionTitle
                                     SubTitle="CONTACT US"
-                                    Title="Ready to Start Your Digital<br> Journey? <span>Let's Collaborate</span>"
+                                    Title="Ready to Start Your Digital<br> Journey? <span>Let&apos;s Collaborate</span>"
                             ></SectionTitle>
                             <p className="section-title-descr" style={{marginTop: '20px', color: '#fff'}}>
-                                Let's collaborate to design, build, and scale your next software success. Get in touch with our team today.
+                                Let&apos;s collaborate to design, build, and scale your next software success. Get in touch with our team today.
                             </p>
                             </div>
                             <Form></Form>
@@ -98,7 +98,7 @@ const Contact1 = () => {
                                         }}>
                                             <h3 style={{color: '#fff', marginBottom: '15px', fontSize: '28px'}}>Get In Touch</h3>
                                             <p style={{color: '#fff', marginBottom: '20px', fontSize: '16px'}}>
-                                                Let's build something amazing together
+                                                Let&apos;s build something amazing together
                                             </p>
                                         </div>
                                     </div>

@@ -17,6 +17,7 @@ const poppins = Poppins({
 });
 
 export const metadata = {
+  metadataBase: new URL('https://virtualsys.com'),
   title: {
     absolute: '',
     default: 'Virtual Sys Technologies - Dedicated Offshore Development Teams | IT Staffing & Managed Software Teams',
