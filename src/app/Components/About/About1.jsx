@@ -11,7 +11,7 @@ const About1 = ({MainImg,ImgTitle,SubTitle,Title,Content,listTitle,BottomText,Bt
                             <div className="about-thumb">
                                 <Image src={MainImg} alt="img" width={636} height={560}   />
                                 <div className="about-shape"></div>
-                                <h4 className="about-title">{ImgTitle}</h4>
+                                {/* <h4 className="about-title">{ImgTitle}</h4> */}
                             </div>
                         </div>
                         <div className="col-lg-6">

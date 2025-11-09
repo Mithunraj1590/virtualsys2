@@ -159,7 +159,7 @@ const Footer = () => {
                     <div className="row copyright">
                         <div className="col-lg-6 col-md-6 col-sm-6">
                             <div className="-copyright-text">
-                                <p>© Copyright 2024 By Virtual Sys Technologies. All Rights Reserved.</p>
+                                <p>© Copyright 2025 By Virtual Sys Technologies. All Rights Reserved.</p>
                             </div>
                         </div>
                         <div className="col-lg-6 col-md-6 col-sm-6">
