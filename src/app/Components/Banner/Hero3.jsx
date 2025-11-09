@@ -29,7 +29,7 @@ const Hero3 = () => {
                                     <h6>{item.subTitle}</h6>
                                     <h1>{parse(item.title)}</h1>
                                     <p>{item.desc}</p>
-                                    <div className="solutek-btn">
+                                    <div className="main-btn">
                                         <Link href="/about" className="btn-2">Get Started</Link>
                                     </div>
                                     <div className="hero-btn-3">

@@ -10,9 +10,7 @@ const About1 = ({MainImg,ImgTitle,SubTitle,Title,Content,listTitle,BottomText,Bt
                         <div className="col-lg-6 col-lg-6">
                             <div className="about-thumb">
                                 <Image src={MainImg} alt="img" width={636} height={560}   />
-                                <div className="about-shape">
-                                    <Image src="/assets/images/about1.png" alt="img" width={40} height={40}   />
-                                </div>
+                                <div className="about-shape"></div>
                                 <h4 className="about-title">{ImgTitle}</h4>
                             </div>
                         </div>
@@ -22,18 +20,10 @@ const About1 = ({MainImg,ImgTitle,SubTitle,Title,Content,listTitle,BottomText,Bt
                                 <h1 className="section-main-title">{parse(Title)}</h1>
                                 <p className="section-title-descr">{Content}</p>
                             </div>
-                            <div className="about-box d-flex align-items-center">
-                                <div className="about-icon">
-                                    <Image src="/assets/images/about4.png" alt="img" width={45} height={41}   />
-                                </div>
-                                <div className="about-tiltle">
-                                    <h3>{listTitle}</h3>
-                                </div>
-                            </div>
                             <div className="about-text">
                                 <p>{BottomText}</p>
                             </div>
-                            <div className="solutek-btn">
+                            <div className="main-btn">
                                 <Link href={BtnUrl}>
                                 {BtnText}
                                     <div className="solutek-hover-btn hover-bx"></div>

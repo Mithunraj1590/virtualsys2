@@ -13,7 +13,7 @@ const PricingCard = ({Price,PricePlan,FeatureList,BtnUrl,BtnText}) => {
                     <li key={index}><i className="bi bi-check-circle"></i>{item}</li>
                 ))}
                 </ul>
-                <div className="solutek-btn">
+                <div className="main-btn">
                     <Link href={BtnUrl}>
                         {BtnText}
                         <div className="solutek-hover-btn hover-bx"></div>

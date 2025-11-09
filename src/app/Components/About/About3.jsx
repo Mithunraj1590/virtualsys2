@@ -51,7 +51,7 @@ const About3 = ({bgImg,MainImg,SubTitle,Title,Content,listTitle1,listTitle2,BoxT
                                         <li>{listTitle2}</li>
                                     </ul>
                                 </div>
-                                <div className="solutek-btn">
+                                <div className="main-btn">
                                     <Link href="/about">EXPLORE MORE
                                         <div className="solutek-hover-btn hover-bx"></div>
                                         <div className="solutek-hover-btn hover-bx2"></div>

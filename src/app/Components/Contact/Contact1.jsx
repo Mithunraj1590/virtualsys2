@@ -29,26 +29,12 @@ const Contact1 = () => {
         <div 
             className="contact-area" 
             style={{
-                backgroundImage: 'url(https://images.unsplash.com/photo-1451187580459-43490279c0fa?w=1920&h=1080&fit=crop)',
-                backgroundRepeat: 'no-repeat',
-                backgroundPosition: 'center',
-                backgroundSize: 'cover',
+                backgroundColor: '#f8f9fc',
                 position: 'relative',
                 padding: '120px 0',
                 zIndex: 1
             }}
         >
-            <div 
-                style={{
-                    position: 'absolute',
-                    top: 0,
-                    left: 0,
-                    right: 0,
-                    bottom: 0,
-                    background: 'linear-gradient(135deg, rgba(5, 10, 30, 0.85) 0%, rgba(255, 59, 0, 0.75) 100%)',
-                    zIndex: -1
-                }}
-            ></div>
                 <div className="container" style={{position: 'relative', zIndex: 1}}>
                     <div className="row">
                         <div className="col-lg-6 col-md-7">
@@ -57,7 +43,7 @@ const Contact1 = () => {
                                     SubTitle="CONTACT US"
                                     Title="Ready to Start Your Digital<br> Journey? <span>Let&apos;s Collaborate</span>"
                             ></SectionTitle>
-                            <p className="section-title-descr" style={{marginTop: '20px', color: '#fff'}}>
+                            <p className="section-title-descr" style={{marginTop: '20px', color: '#7a7a7a'}}>
                                 Let&apos;s collaborate to design, build, and scale your next software success. Get in touch with our team today.
                             </p>
                             </div>
@@ -86,7 +72,7 @@ const Contact1 = () => {
                                         left: 0,
                                         right: 0,
                                         bottom: 0,
-                                        background: 'linear-gradient(135deg, rgba(5, 10, 30, 0.7) 0%, rgba(255, 59, 0, 0.5) 100%)',
+                                        background: 'rgba(5, 10, 30, 0.5)',
                                         display: 'flex',
                                         alignItems: 'center',
                                         justifyContent: 'center'

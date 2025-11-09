@@ -26,7 +26,7 @@ const Faq = () => {
     }, [firstItemOpen]);
 
     const FaqContent = {
-        img1:'/assets/images/faq1.png',
+        img1:'https://images.unsplash.com/photo-1521737604893-d14cc237f11d?w=900&h=600&fit=crop',
         Title:'A Comprehensive <span>Guide.</span>',
         Content:'Alternative innovation network environmental whiteboard pursue  for premier methods empowerment  go forward opportunities'
       }
@@ -43,7 +43,14 @@ const Faq = () => {
                                 ></SectionTitle>
                             </div>
                             <div className="faq-thumb">
-                                <Image src={FaqContent.img1} alt="img" width={517} height={356}   />
+                                <Image
+                                    src={FaqContent.img1}
+                                    alt="Team collaborating on strategy"
+                                    width={517}
+                                    height={356}
+                                    style={{ borderRadius: '20px', objectFit: 'cover' }}
+                                    priority
+                                />
                             </div>
                         </div>
                         <div className="col-lg-6 col-md-12">
@@ -64,12 +71,6 @@ const Faq = () => {
                                 </div>
                             </div>
                         </div>
-                    </div>
-                    <div className="faq-shape">
-                        <Image src="/assets/images/faq2.png" alt="img" width={167} height={397}   />
-                    </div>
-                    <div className="faq-shape2">
-                        <Image src="/assets/images/faq3.png" alt="img" width={318} height={204}   />
                     </div>
                 </div>
             </div>

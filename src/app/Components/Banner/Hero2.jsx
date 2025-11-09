@@ -33,7 +33,7 @@ const Hero2 = ({bgImg,SubTitle,Title,Content,BtnText,BtnLink,mainImage}) => {
 						<h5>{SubTitle}</h5>
 						<h1>{parse(Title)}</h1>
 						<p>{Content}</p>
-						<div className="solutek-btn">
+						<div className="main-btn">
 							<Link href={BtnLink} className="btn-2">{BtnText}</Link>
 						</div>
 						<div className="hero-btn-shape bounce-animate-3">

@@ -21,7 +21,13 @@ const Features = () => {
                         {data.map((item, i) => (
                             <div key={i} className="feature-sinble-single-box">
                                 <div className="feature-icon">
-                                    <Image src={item.img} alt="img" width={36} height={36}   />
+                                    <Image
+                                        src={item.img}
+                                        alt={`${item.title} icon`}
+                                        width={64}
+                                        height={64}
+                                        style={{ objectFit: 'cover', borderRadius: '18px' }}
+                                    />
                                 </div>
                                 <div className="feature-content">
                                     <h3 className="feature-title">{item.title}</h3>

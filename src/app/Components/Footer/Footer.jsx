@@ -48,7 +48,7 @@ const Footer = () => {
                         <div className="col-lg-6 col-md-12">
                             <div className="address-box">
                                 <div className="address-icon">
-                                    <Image src="/assets/images/address1.png" alt="img" width={35} height={35}   />
+                                    <Image src="/assets/icons/address-primary.svg" alt="Location icon" width={48} height={48}   />
                                 </div>
                                 <div className="address-title">
                                     <h3>{AdressContent.Title}</h3>
@@ -58,9 +58,9 @@ const Footer = () => {
                         <div className="col-lg-6 col-md-12">
                             <div className="address-box2">
                                 <div className="address-icon">
-                                    <Image src="/assets/images/address2.png" alt="img" width={34} height={34}   />
+                                    <Image src="/assets/icons/address-phone.svg" alt="Phone icon" width={48} height={48}   />
                                 </div>
-                                <div className="solutek-btn">
+                                <div className="main-btn">
                                     <Link href="/contact">
                                         {AdressContent.Number}
                                         <div className="solutek-hover-btn hover-bx"></div>
@@ -74,28 +74,8 @@ const Footer = () => {
                     </div>
                 </div>
             </div>
-            <div 
-                className="footer-area"
-                style={{
-                    backgroundImage: 'url(https://images.unsplash.com/photo-1557804506-669a67965ba0?w=1920&h=1080&fit=crop)',
-                    backgroundPosition: 'center',
-                    backgroundRepeat: 'no-repeat',
-                    backgroundSize: 'cover',
-                    position: 'relative'
-                }}
-            >
-                <div 
-                    style={{
-                        position: 'absolute',
-                        top: 0,
-                        left: 0,
-                        right: 0,
-                        bottom: 0,
-                        background: 'linear-gradient(135deg, rgba(5, 10, 30, 0.95) 0%, rgba(255, 59, 0, 0.9) 100%)',
-                        zIndex: 0
-                    }}
-                ></div>
-                <div className="container" style={{position: 'relative', zIndex: 1}}>
+            <div className="footer-area">
+                <div className="container">
                     <div className="row footer">
                         <div className="col-lg-4 col-md-6 col-sm-6">
                             <div className="footer-widget">

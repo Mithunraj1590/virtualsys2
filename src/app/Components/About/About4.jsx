@@ -38,7 +38,7 @@ const About4 = ({MainImg,SubTitle,Title,Content,listTitle1,listTitle2,BoxTitle1,
 										<li><span>{listTitle2}</span></li>
 									</ul>
 								</div>
-								<div className="solutek-btn">
+								<div className="main-btn">
 									<Link href="/contact">EXPLORE MORE
 										<div className="solutek-hover-btn hover-bx"></div>
 										<div className="solutek-hover-btn hover-bx2"></div>

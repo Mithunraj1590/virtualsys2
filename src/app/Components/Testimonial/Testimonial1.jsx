@@ -42,7 +42,7 @@ const Testimonial1 = () => {
       };      
 
     return (
-        <div className="testimonial-area" data-background="/assets/images/testi-bg.png">
+        <div className="testimonial-area">
             <div className="container">
                 <div className="row">
                     <div className="col-lg-12">
@@ -60,23 +60,26 @@ const Testimonial1 = () => {
                             <div key={index} className="col-lg-12 col-md-12">
                                 <div className="testi-box">
                                     <div className="testi-single-box">
-                                        <div className="testi-icon">
-                                            <Image src="/assets/images/testi1.png" alt="img" width={48} height={36}   />
+                                        <div className="testi-header">
+                                            <div className="testi-icon">
+                                                <Image src={item.icon || '/assets/icons/testimonial-avatar-1.svg'} alt={`${item.title} icon`} width={56} height={56}   />
+                                            </div>
+                                            <div className="testi-meta">
+                                                <h3 className="testi-name">{item.title}</h3>
+                                                <p className="testi-role">{item.subTitle}</p>
+                                            </div>
+                                            <div className="testi-quote">
+                                                <i className="bi bi-quote"></i>
+                                            </div>
                                         </div>
-                                        <div className="testi-content">
-                                            <p className="testi-text">{item.desc}</p>
-                                            <ul className="testi-rating">
-                                                <li><i className="bi bi-star-fill"></i></li>
-                                                <li><i className="bi bi-star-fill"></i></li>
-                                                <li><i className="bi bi-star-fill"></i></li>
-                                                <li><i className="bi bi-star-fill"></i></li>
-                                                <li><i className="bi bi-star-fill"></i></li>
-                                            </ul>
-                                            <h3 className="testi-title">{item.title} <span>{item.subTitle}</span></h3>
-                                        </div>
-                                    </div>
-                                    <div className="testi-author">
-                                       <Image src={item.image} alt="img" width={70} height={70}   />
+                                        <ul className="testi-rating">
+                                            <li><i className="bi bi-star-fill"></i></li>
+                                            <li><i className="bi bi-star-fill"></i></li>
+                                            <li><i className="bi bi-star-fill"></i></li>
+                                            <li><i className="bi bi-star-fill"></i></li>
+                                            <li><i className="bi bi-star-fill"></i></li>
+                                        </ul>
+                                        <p className="testi-text">{item.desc}</p>
                                     </div>
                                 </div>
                             </div>

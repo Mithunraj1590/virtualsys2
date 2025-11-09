@@ -13,26 +13,11 @@ const Counter = () => {
         <div 
             className="counter-area"
             style={{
-                backgroundImage: 'url(https://images.unsplash.com/photo-1550745165-9bc0b252726f?w=1920&h=1080&fit=crop)',
-                backgroundPosition: 'center',
-                backgroundRepeat: 'no-repeat',
-                backgroundSize: 'cover',
-                position: 'relative',
                 padding: '100px 0',
+                position: 'relative',
                 overflow: 'hidden'
             }}
         >
-            <div 
-                style={{
-                    position: 'absolute',
-                    top: 0,
-                    left: 0,
-                    right: 0,
-                    bottom: 0,
-                    background: 'linear-gradient(135deg, rgba(5, 10, 30, 0.9) 0%, rgba(255, 59, 0, 0.85) 100%)',
-                    zIndex: 0
-                }}
-            ></div>
             <div className="container" style={{position: 'relative', zIndex: 1}}>
                 <div className="row">
                     <div className="col-lg-12" style={{marginBottom: '60px'}}>
@@ -52,10 +37,9 @@ const Counter = () => {
                                 style={{
                                     textAlign: 'center',
                                     padding: '40px 20px',
-                                    background: 'rgba(255, 255, 255, 0.1)',
+                                    background: '#ffffff',
                                     borderRadius: '20px',
-                                    backdropFilter: 'blur(10px)',
-                                    border: '1px solid rgba(255, 255, 255, 0.2)',
+                                    border: '1px solid rgba(5, 10, 30, 0.2)',
                                     transition: 'transform 0.3s, box-shadow 0.3s',
                                     position: 'relative',
                                     zIndex: 1
@@ -75,7 +59,7 @@ const Counter = () => {
                                         style={{
                                             fontSize: '56px',
                                             lineHeight: '1',
-                                            color: '#ffffff',
+                                            color: '#050a1e',
                                             fontWeight: '700',
                                             marginBottom: '15px',
                                             fontFamily: 'var(--heading-font)'
@@ -87,12 +71,12 @@ const Counter = () => {
                                         style={{
                                             fontSize: '18px',
                                             lineHeight: '1.5',
-                                            color: '#ffffff',
+                                            color: '#7a7a7a',
                                             fontWeight: '500',
                                             textTransform: 'uppercase',
                                             letterSpacing: '1px',
                                             margin: 0,
-                                            opacity: 0.95
+                                            opacity: 0.9
                                         }}
                                     >
                                         {item.desc}

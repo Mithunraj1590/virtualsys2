@@ -57,7 +57,7 @@ const Process5Steps = () => {
                                 <div className="process-step-number" style={{
                                     fontSize: '48px',
                                     fontWeight: 'bold',
-                                    color: '#ff3b00',
+                                    color: '#06406D',
                                     marginBottom: '15px'
                                 }}>
                                     {step.number}

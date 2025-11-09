@@ -56,7 +56,7 @@ const Hero1 = ({bgImg,SubTitle,Title,Content,BtnText,BtnLink,mainImage,VideoText
 						{buttons && buttons.length > 0 ? (
 							<div className="hero-buttons d-flex flex-wrap gap-3">
 								{buttons.map((btn, index) => (
-									<div key={index} className={`solutek-btn ${btn.variant || ''}`}>
+									<div key={index} className={`main-btn ${btn.variant || ''}`}>
 										<Link href={btn.link || '#'}>
 											{btn.text}
 											<div className="solutek-hover-btn hover-bx"></div>
@@ -68,7 +68,7 @@ const Hero1 = ({bgImg,SubTitle,Title,Content,BtnText,BtnLink,mainImage,VideoText
 								))}
 							</div>
 						) : (
-							<div className="solutek-btn">
+							<div className="main-btn">
 								<Link href={BtnLink}>
 									{BtnText}
 									<div className="solutek-hover-btn hover-bx"></div>
@@ -149,7 +149,7 @@ const Hero1 = ({bgImg,SubTitle,Title,Content,BtnText,BtnLink,mainImage,VideoText
 											alignItems: 'center'
 										}}>
 											<i className="bi bi-check-circle-fill" style={{
-												color: '#ff3b00', 
+												color: '#06406D', 
 												marginRight: '10px',
 												fontSize: '16px'
 											}}></i>

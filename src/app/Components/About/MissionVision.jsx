@@ -27,7 +27,7 @@ const MissionVision = () => {
                             <div className="mission-icon" style={{
                                 width: '70px',
                                 height: '70px',
-                                background: '#ff3b00',
+                                background: '#06406D',
                                 borderRadius: '50%',
                                 display: 'flex',
                                 alignItems: 'center',
@@ -53,7 +53,7 @@ const MissionVision = () => {
                             <div className="vision-icon" style={{
                                 width: '70px',
                                 height: '70px',
-                                background: '#ff3b00',
+                                background: '#06406D',
                                 borderRadius: '50%',
                                 display: 'flex',
                                 alignItems: 'center',
@@ -79,7 +79,7 @@ const MissionVision = () => {
                             <div className="values-icon" style={{
                                 width: '70px',
                                 height: '70px',
-                                background: '#ff3b00',
+                                background: '#06406D',
                                 borderRadius: '50%',
                                 display: 'flex',
                                 alignItems: 'center',
@@ -91,23 +91,23 @@ const MissionVision = () => {
                             <h3 className="h3" style={{marginBottom: '20px', color: '#050a1e'}}>Core Values</h3>
                             <ul style={{listStyle: 'none', padding: 0, color: '#7a7a7a'}}>
                                 <li style={{marginBottom: '10px', lineHeight: '1.8'}}>
-                                    <i className="bi bi-check-circle-fill" style={{color: '#ff3b00', marginRight: '10px'}}></i>
+                                    <i className="bi bi-check-circle-fill" style={{color: '#06406D', marginRight: '10px'}}></i>
                                     Innovation
                                 </li>
                                 <li style={{marginBottom: '10px', lineHeight: '1.8'}}>
-                                    <i className="bi bi-check-circle-fill" style={{color: '#ff3b00', marginRight: '10px'}}></i>
+                                    <i className="bi bi-check-circle-fill" style={{color: '#06406D', marginRight: '10px'}}></i>
                                     Integrity
                                 </li>
                                 <li style={{marginBottom: '10px', lineHeight: '1.8'}}>
-                                    <i className="bi bi-check-circle-fill" style={{color: '#ff3b00', marginRight: '10px'}}></i>
+                                    <i className="bi bi-check-circle-fill" style={{color: '#06406D', marginRight: '10px'}}></i>
                                     Reliability
                                 </li>
                                 <li style={{marginBottom: '10px', lineHeight: '1.8'}}>
-                                    <i className="bi bi-check-circle-fill" style={{color: '#ff3b00', marginRight: '10px'}}></i>
+                                    <i className="bi bi-check-circle-fill" style={{color: '#06406D', marginRight: '10px'}}></i>
                                     Transparency
                                 </li>
                                 <li style={{marginBottom: '10px', lineHeight: '1.8'}}>
-                                    <i className="bi bi-check-circle-fill" style={{color: '#ff3b00', marginRight: '10px'}}></i>
+                                    <i className="bi bi-check-circle-fill" style={{color: '#06406D', marginRight: '10px'}}></i>
                                     Teamwork
                                 </li>
                             </ul>

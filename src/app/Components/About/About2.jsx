@@ -40,7 +40,7 @@ const About2 = ({bgImg,MainImg,SubTitle,Title,Content,listTitle1,listTitle2,Cont
                                     <li><Image src="/assets/images/home-two/about-icon2.png" alt="img" width={25} height={24}   />{listTitle2}</li>
                                 </ul>
                             </div>
-                            <div className="solutek-btn">
+                            <div className="main-btn">
                                  <Link href="/about" className="btn-2">EXPLORE MORE</Link>
                             </div>
                             <div className="about-contact-box">

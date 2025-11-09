@@ -49,7 +49,7 @@ const ContactInfo = () => {
                                 <div className="contact-icon" style={{
                                     width: '60px',
                                     height: '60px',
-                                    background: '#ff3b00',
+                                    background: '#06406D',
                                     borderRadius: '50%',
                                     display: 'flex',
                                     alignItems: 'center',
