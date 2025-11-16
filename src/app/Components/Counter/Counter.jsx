@@ -2,6 +2,7 @@
 import { useEffect } from 'react';
 import data from '../../Data/counter.json';
 import SectionTitle from '../Common/SectionTitle';
+import { MotionSection, MotionStagger } from '../Common/MotionWrappers';
 
 const Counter = () => {
 
@@ -10,7 +11,7 @@ const Counter = () => {
       }, []);
     
     return (
-        <div 
+        <MotionSection 
             className="counter-area"
             style={{
                 padding: '100px 0',
@@ -29,7 +30,7 @@ const Counter = () => {
                         </div>
                     </div>
                 </div>
-                <div className="row">
+                <MotionStagger className="row">
                     {data.map((item, i) => (
                         <div key={i} className="col-lg-4 col-md-6 col-sm-6" style={{marginBottom: '30px'}}>
                             <div 
@@ -85,9 +86,9 @@ const Counter = () => {
                             </div>
                         </div>
                     ))}
-                </div>
+                </MotionStagger>
             </div>
-        </div>
+        </MotionSection>
     );
 };
 

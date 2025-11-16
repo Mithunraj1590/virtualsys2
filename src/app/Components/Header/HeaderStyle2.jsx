@@ -4,6 +4,20 @@ import Nav from './Nav';
 import Link from 'next/link';
 import Image from 'next/image';
 import { usePathname } from 'next/navigation';
+import { motion } from 'framer-motion';
+
+const headerVariants = {
+  hidden: { opacity: 0, y: -40 },
+  visible: {
+    opacity: 1,
+    y: 0,
+    transition: {
+      duration: 0.6,
+      ease: 'easeOut',
+    },
+  },
+};
+
 export default function HeaderStyle2({ variant }) {
   const [mobileToggle, setMobileToggle] = useState(false);
   const [isSticky, setIsSticky] = useState();
@@ -32,12 +46,15 @@ export default function HeaderStyle2({ variant }) {
   const location = usePathname();
 
   return (
-    <header
+    <motion.header
       className={`cs_site_header header_style_2 cs_style_1 ${
         variant ? variant : ''
       } cs_sticky_header cs_site_header_full_width ${
         mobileToggle ? 'cs_mobile_toggle_active' : ''
       } ${isSticky ? isSticky : ''}`}
+      variants={headerVariants}
+      initial="hidden"
+      animate="visible"
     >
       <div className="cs_main_header">
         <div className="container-fluid">
@@ -70,6 +87,6 @@ export default function HeaderStyle2({ variant }) {
           </div>
         </div>
       </div>
-    </header>
+    </motion.header>
   );
 }

@@ -1,5 +1,6 @@
 import Image from "next/image";
 import Link from "next/link";
+import { MotionSection } from "../Common/MotionWrappers";
 
 const Footer = () => {
 
@@ -41,7 +42,7 @@ const Footer = () => {
       ]
 
     return (
-        <div className="footer_main_area">
+        <MotionSection className="footer_main_area">
             <div className="address-area">
                 <div className="container">
                     <div className="row">
@@ -174,7 +175,7 @@ const Footer = () => {
                     </div>
                 </div>
 	        </div>
-        </div>
+        </MotionSection>
     );
 };
 

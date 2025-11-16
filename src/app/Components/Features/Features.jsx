@@ -1,10 +1,11 @@
 import Image from 'next/image';
 import SectionTitle from '../Common/SectionTitle';
 import data from '../../Data/feature.json'
+import { MotionSection, MotionStagger } from '../Common/MotionWrappers';
 
 const Features = () => {
     return (
-        <div className="feature-area">
+        <MotionSection className="feature-area">
                 <div className="container">
                     <div className="row">
                         <div className="col-lg-12">
@@ -16,7 +17,7 @@ const Features = () => {
                             </div>
                         </div>
                     </div>
-                    <div className="row about align-items-center">
+                    <MotionStagger className="row about align-items-center">
                         <div className="feature-box">
                         {data.map((item, i) => (
                             <div key={i} className="feature-sinble-single-box">
@@ -37,9 +38,9 @@ const Features = () => {
                              ))}
 
                         </div>
-                    </div>
+                    </MotionStagger>
                 </div>	
-            </div>
+            </MotionSection>
     );
 };
 

@@ -4,6 +4,7 @@ import data from '../../Data/faq.json';
 import { useEffect, useRef, useState } from "react";
 import parse from 'html-react-parser';
 import Image from "next/image";
+import { MotionSection } from "../Common/MotionWrappers";
 
 const Faq = () => {
 
@@ -29,10 +30,10 @@ const Faq = () => {
         img1:'https://images.unsplash.com/photo-1521737604893-d14cc237f11d?w=900&h=600&fit=crop',
         Title:'A Comprehensive <span>Guide.</span>',
         Content:'Alternative innovation network environmental whiteboard pursue  for premier methods empowerment  go forward opportunities'
-      }
+    }
 
     return (
-            <div className="faq-area">
+            <MotionSection className="faq-area">
                 <div className="container">
                     <div className="row align-items-center">
                         <div className="col-lg-6 col-md-12">
@@ -73,7 +74,7 @@ const Faq = () => {
                         </div>
                     </div>
                 </div>
-            </div>
+            </MotionSection>
     );
 };
 

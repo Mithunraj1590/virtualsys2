@@ -5,6 +5,7 @@ import Form from "../Form/Form";
 import loadBackgroudImages from "../Common/loadBackgroudImages";
 import VideoModal from "../VideoModal/VideoModal";
 import Image from "next/image";
+import { MotionSection } from "../Common/MotionWrappers";
 
 
 const Contact1 = () => {
@@ -26,7 +27,7 @@ const Contact1 = () => {
 	  };
       
     return (
-        <div 
+        <MotionSection 
             className="contact-area" 
             style={{
                 backgroundColor: '#f8f9fc',
@@ -98,7 +99,7 @@ const Contact1 = () => {
                     iframeSrc={iframeSrc}
                     handelClose={handelClose}        
                 ></VideoModal>
-            </div>
+            </MotionSection>
 
     );
 };

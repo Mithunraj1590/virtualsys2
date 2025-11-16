@@ -811,8 +811,8 @@ a,i, cite, em, var, address, dfn,ol,li,ul{
  }
   .cs_nav .cs_nav_list {
     position: absolute;
-    width: 100vw;
-    left: -15px;
+  width: 100%;
+  left: 0;
     background-color: #181818;
     padding: 10px 0;
     display: none;
@@ -987,10 +987,10 @@ a,i, cite, em, var, address, dfn,ol,li,ul{
   content: "";
   position: absolute;
   height: 100%;
-  width: 100vw;
+  width: 100%;
   background-color: #ff3c00;
   border-radius: 0 0 60px 0;
-  right: -6%;
+  right: 0;
   top: 0;
 }
 .cs_site_header.cs_style_1 .cs_top_header {
@@ -1013,10 +1013,10 @@ a,i, cite, em, var, address, dfn,ol,li,ul{
   content: "";
   position: absolute;
   height: 100%;
-  width: 100vw;
+  width: 100%;
   background-color: #fff;
   border-radius: 60px 0 0;
-  left: -6%;
+  left: 0;
   top: 0;
 }
 .cs_site_header.cs_style_1 .cs_main_header .container {

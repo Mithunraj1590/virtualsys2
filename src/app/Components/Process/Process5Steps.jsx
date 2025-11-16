@@ -2,6 +2,7 @@
 import { useEffect } from "react";
 import SectionTitle from "../Common/SectionTitle";
 import loadBackgroudImages from "../Common/loadBackgroudImages";
+import { MotionSection, MotionStagger } from "../Common/MotionWrappers";
 
 const Process5Steps = () => {
 
@@ -38,7 +39,7 @@ const Process5Steps = () => {
     ];
 
     return (
-        <div className="process-5steps-area" style={{padding: '100px 0'}}>
+        <MotionSection className="process-5steps-area" style={{padding: '100px 0'}}>
             <div className="container">
                 <div className="row">
                     <div className="col-lg-12">
@@ -50,7 +51,7 @@ const Process5Steps = () => {
                         </div>
                     </div>
                 </div>
-                <div className="row justify-content-center">
+                <MotionStagger className="row justify-content-center">
                     {steps.map((step, index) => (
                         <div key={index} className="col-lg-2 col-md-4 col-sm-6 col-12">
                             <div className="process-step-box text-center" style={{marginBottom: '30px'}}>
@@ -71,9 +72,9 @@ const Process5Steps = () => {
                             </div>
                         </div>
                     ))}
-                </div>
+                </MotionStagger>
             </div>
-        </div>
+        </MotionSection>
     );
 };
 

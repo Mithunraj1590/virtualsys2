@@ -5,6 +5,36 @@ import loadBackgroudImages from "../Common/loadBackgroudImages";
 import VideoModal from "../VideoModal/VideoModal";
 import Link from "next/link";
 import Image from "next/image";
+import { motion } from "framer-motion";
+
+const containerVariants = {
+  hidden: { opacity: 0 },
+  visible: {
+    opacity: 1,
+    transition: {
+      duration: 0.6,
+      ease: "easeOut",
+      when: "beforeChildren",
+      staggerChildren: 0.15,
+    },
+  },
+};
+
+const leftColumnVariants = {
+  hidden: { opacity: 0, y: 40 },
+  visible: { opacity: 1, y: 0, transition: { duration: 0.7, ease: "easeOut" } },
+};
+
+const rightColumnVariants = {
+  hidden: { opacity: 0, y: 40 },
+  visible: { opacity: 1, y: 0, transition: { duration: 0.8, ease: "easeOut" } },
+};
+
+const buttonVariants = {
+  initial: { scale: 1, opacity: 0, y: 20 },
+  animate: { scale: 1, opacity: 1, y: 0 },
+  hover: { scale: 1.04, y: -2 },
+};
 
 const Hero1 = ({bgImg,SubTitle,Title,Content,BtnText,BtnLink,mainImage,VideoText,buttons,managementBox}) => {
 
@@ -47,16 +77,33 @@ const Hero1 = ({bgImg,SubTitle,Title,Content,BtnText,BtnLink,mainImage,VideoText
                     zIndex: 0
                 }}
             ></div>
-		<div className="container" style={{position: 'relative', zIndex: 1}}>
+		<motion.div 
+      className="container" 
+      style={{position: 'relative', zIndex: 1}}
+      variants={containerVariants}
+      initial="hidden"
+      animate="visible"
+      >
 			<div className="row hero align-items-end">
 				<div className="col-lg-6">
-					<div className="hero-contant">
+					<motion.div 
+            className="hero-contant"
+            variants={leftColumnVariants}
+          >
 						<h1>{parse(Title)}</h1>
 						<p>{Content}</p>
 						{buttons && buttons.length > 0 ? (
 							<div className="hero-buttons d-flex flex-wrap gap-3">
 								{buttons.map((btn, index) => (
-									<div key={index} className={`main-btn ${btn.variant || ''}`}>
+									<motion.div 
+                    key={index} 
+                    className={`main-btn ${btn.variant || ''}`}
+                    variants={buttonVariants}
+                    initial="initial"
+                    animate="animate"
+                    whileHover="hover"
+                    transition={{ duration: 0.25 }}
+                  >
 										<Link href={btn.link || '#'}>
 											{btn.text}
 											<div className="solutek-hover-btn hover-bx"></div>
@@ -64,11 +111,18 @@ const Hero1 = ({bgImg,SubTitle,Title,Content,BtnText,BtnLink,mainImage,VideoText
 											<div className="solutek-hover-btn hover-bx3"></div>
 											<div className="solutek-hover-btn hover-bx4"></div>
 										</Link>
-									</div>
+									</motion.div>
 								))}
 							</div>
 						) : (
-							<div className="main-btn">
+							<motion.div 
+                className="main-btn"
+                variants={buttonVariants}
+                initial="initial"
+                animate="animate"
+                whileHover="hover"
+                transition={{ duration: 0.25 }}
+              >
 								<Link href={BtnLink}>
 									{BtnText}
 									<div className="solutek-hover-btn hover-bx"></div>
@@ -76,28 +130,41 @@ const Hero1 = ({bgImg,SubTitle,Title,Content,BtnText,BtnLink,mainImage,VideoText
 									<div className="solutek-hover-btn hover-bx3"></div>
 									<div className="solutek-hover-btn hover-bx4"></div>
 								</Link>
-							</div>
+							</motion.div>
 						)}
 						{VideoText && (
-							<div className="hero-video-icon" onClick={handelClick}>	
+							<motion.div 
+                className="hero-video-icon" 
+                onClick={handelClick}
+                whileHover={{ scale: 1.05 }}
+                whileTap={{ scale: 0.95 }}
+              >	
 								<span className="video-vemo-icon venobox vbox-item" data-vbtype="youtube" data-autoplay="true"><i className="bi bi-play"></i><span>{VideoText}</span></span>
-							</div>
+							</motion.div>
 						)}
-					</div>
+					</motion.div>
 				</div>
 				<div className="col-lg-6">
-					<div className="hero-thumb position-relative" style={{
+					<motion.div 
+            className="hero-thumb position-relative" 
+            style={{
 						textAlign: 'center',
 						position: 'relative',
 						zIndex: 2
-					}}>
-						<div style={{
+					}}
+            variants={rightColumnVariants}
+          >
+						<motion.div 
+              style={{
 							position: 'relative',
 							display: 'inline-block',
 							borderRadius: '20px',
 							overflow: 'hidden',
 							boxShadow: '0 20px 60px rgba(0,0,0,0.3)'
-						}}>
+						}}
+              animate={{ y: [0, -10, 0] }}
+              transition={{ duration: 6, repeat: Infinity, ease: "easeInOut" }}
+            >
 							{mainImage && (
 								<Image 
 									src={mainImage} 
@@ -113,9 +180,11 @@ const Hero1 = ({bgImg,SubTitle,Title,Content,BtnText,BtnLink,mainImage,VideoText
 									priority
 								/>
 							)}
-						</div>
+						</motion.div>
 						{managementBox && (
-							<div className="management-box" style={{
+							<motion.div 
+                className="management-box" 
+                style={{
 								position: 'absolute',
 								right: '-20px',
 								top: '50%',
@@ -126,7 +195,11 @@ const Hero1 = ({bgImg,SubTitle,Title,Content,BtnText,BtnLink,mainImage,VideoText
 								boxShadow: '0 10px 40px rgba(0,0,0,0.2)',
 								maxWidth: '320px',
 								zIndex: 3
-							}}>
+							}}
+                initial={{ opacity: 0, x: 30 }}
+                animate={{ opacity: 1, x: 0 }}
+                transition={{ duration: 0.7, delay: 0.4, ease: "easeOut" }}
+              >
 								<h4 style={{
 									color: '#050a1e',
 									fontSize: '22px',
@@ -157,12 +230,12 @@ const Hero1 = ({bgImg,SubTitle,Title,Content,BtnText,BtnLink,mainImage,VideoText
 										</li>
 									))}
 								</ul>
-							</div>
+							</motion.div>
 						)}
-					</div>
+					</motion.div>
 				</div>
 			</div>
-		</div>
+		</motion.div>
         <VideoModal
           isTrue={toggle}
           iframeSrc={iframeSrc}

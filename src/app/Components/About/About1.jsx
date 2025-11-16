@@ -1,10 +1,11 @@
 import parse from 'html-react-parser';
 import Image from 'next/image';
 import Link from 'next/link';
+import { MotionSection } from '../Common/MotionWrappers';
 
 const About1 = ({MainImg,ImgTitle,SubTitle,Title,Content,listTitle,BottomText,BtnUrl,BtnText}) => {
     return (
-        <div className="about-area">
+        <MotionSection className="about-area">
                 <div className="container">
                     <div className="row align-items-center">
                         <div className="col-lg-6 col-lg-6">
@@ -35,7 +36,7 @@ const About1 = ({MainImg,ImgTitle,SubTitle,Title,Content,listTitle,BottomText,Bt
                         </div>
                     </div>
                 </div>
-            </div>
+            </MotionSection>
     );
 };
 

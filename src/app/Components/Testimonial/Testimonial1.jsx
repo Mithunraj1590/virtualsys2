@@ -5,6 +5,7 @@ import data from '../../Data/testimonial1.json';
 import { useEffect } from "react";
 import loadBackgroudImages from "../Common/loadBackgroudImages";
 import Image from "next/image";
+import { MotionSection } from "../Common/MotionWrappers";
 
 const Testimonial1 = () => {
 
@@ -42,7 +43,7 @@ const Testimonial1 = () => {
       };      
 
     return (
-        <div className="testimonial-area">
+        <MotionSection className="testimonial-area">
             <div className="container">
                 <div className="row">
                     <div className="col-lg-12">
@@ -89,7 +90,7 @@ const Testimonial1 = () => {
                     </div>
                 </div>
             </div>
-        </div>
+        </MotionSection>
 
     );
 };

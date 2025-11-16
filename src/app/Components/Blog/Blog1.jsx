@@ -2,6 +2,7 @@ import SectionTitle from "../Common/SectionTitle";
 import BlogCard1 from "../BlogCard/BlogCard1";
 import BlogCardStyle2 from "../BlogCard/BlogCardStyle2";
 import Link from "next/link";
+import { MotionSection, MotionStagger } from "../Common/MotionWrappers";
 
 const Blog1 = () => {
     const featurePost = {
@@ -33,7 +34,7 @@ const Blog1 = () => {
     ];
 
     return (
-        <div className="blog-area">
+        <MotionSection className="blog-area">
             <div className="container">
                 <div className="row align-items-center">
                     <div className="col-lg-6">
@@ -58,7 +59,7 @@ const Blog1 = () => {
                         </div>
                     </div>
                 </div>
-                <div className="row">
+                <MotionStagger className="row">
                     <div className="col-xl-5 col-lg-6 col-md-6">
                         <BlogCard1
                             BlogImg={featurePost.image}
@@ -82,9 +83,9 @@ const Blog1 = () => {
                             ></BlogCardStyle2>
                         ))}
                     </div>
-                </div>
+                </MotionStagger>
             </div>
-        </div>
+        </MotionSection>
     );
 };
 
