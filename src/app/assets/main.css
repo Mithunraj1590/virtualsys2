@@ -6,9 +6,20 @@
   --heading-font: "Poppins", sans-serif;
 }
 
-html, body {
-    overflow-x: hidden;
+html,
+body {
+  height: 100%;
+  overflow-x: hidden;
+  overflow-y: scroll;
+  scrollbar-width: none; /* Firefox: hide scrollbar but keep scroll */
 }
+
+html::-webkit-scrollbar,
+body::-webkit-scrollbar {
+  width: 0;
+  height: 0;
+}
+
 html{
     scroll-behavior: smooth;
 }
@@ -1117,15 +1128,17 @@ a,i, cite, em, var, address, dfn,ol,li,ul{
 /*=====================================
 <-- 02.start solutek hero Area Css -->
 =======================================*/
-.hero-contant{
-  padding-bottom: 100px;
-}
 .hero-area {
-  height: 100vh;
+  min-height: calc(100vh - 100px);
+  padding: 150px 0 40px;
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
-  /* margin: 0px 50px 0; */
+  overflow: hidden;
+}
+
+.hero-contant{
+  padding-bottom: 40px;
 }
 
 .hero-contant h5 {
@@ -1157,8 +1170,8 @@ a,i, cite, em, var, address, dfn,ol,li,ul{
 }
 
 .hero-contant h1 {
-  font-size: 55px;
-  line-height: 70px;
+  font-size: 60px;
+  line-height: 1.2;
   color: #ffffff;
   font-weight: 700;
   font-family: var(--heading-font);
@@ -1172,9 +1185,8 @@ a,i, cite, em, var, address, dfn,ol,li,ul{
   color: #ffffff;
   font-weight: 400;
   font-family: var(--body-color-font);
-  width: 91%;
-  margin: 0;
-  padding: 13px 0 43px;
+  max-width: 620px;
+  margin: 20px 0 36px;
 }
 
 .hero-area .solutek-hover-btn {
@@ -2034,7 +2046,7 @@ p.blog-tex {
 =======================================*/
 
 .about-area {
-  padding: 0 0 120px;
+  padding: 60px 0 120px;
   position: relative;
   z-index: 1;
 }

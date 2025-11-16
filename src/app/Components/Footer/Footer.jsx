@@ -21,7 +21,7 @@ const Footer = () => {
       ];  
 
       const LogoContent = {
-        img1:'/logo.png',
+        img1:'/logo-full.png',
         Content:'Virtual Sys Technologies empowers global businesses to design, build, and scale digital products through dedicated offshore development teams. For over 17 years, we\'ve helped companies across UAE, USA, and India accelerate their digital transformation with secure, agile, and transparent delivery.'
       }
 
