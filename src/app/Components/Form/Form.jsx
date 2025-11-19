@@ -29,7 +29,7 @@ const Form = () => {
                         <textarea name="message" id="message" cols="30" rows="10" placeholder="Message"></textarea>
                     </div>
                     <div className="quote_button">
-                        <button className="btn" type="submit">SENS NOW <i className="bi bi-arrow-right"></i></button>
+                        <button className="btn" type="submit">SEND NOW <i className="bi bi-arrow-right"></i></button>
                     </div>
                 </div>
             </div>

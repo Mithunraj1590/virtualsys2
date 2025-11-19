@@ -30,7 +30,7 @@ const Home = () => {
     return (
         <div className='home-page'>
             <Hero1
-                bgImg="https://images.unsplash.com/photo-1451187580459-43490279c0fa?w=1920&h=1080&fit=crop"
+                bgImg="/assets/1.png"
                 Title="We Build Dedicated Offshore Teams<br> That Build Your Future"
                 Content="For over 17 years, we've helped companies across the UAE, USA, and India accelerate their digital transformation by providing full-time developers, designers, and project managers — all managed from our secure India delivery center."
                 BtnText="Hire Developers"
@@ -40,7 +40,7 @@ const Home = () => {
             ></Hero1> 
             <Process5Steps></Process5Steps>
             <About1
-                MainImg="https://images.unsplash.com/photo-1551434678-e076c223a692?w=800&h=600&fit=crop"
+                MainImg="/assets/2.png"
                 ImgTitle="OFFSHORE EXCELLENCE"
                 SubTitle="VIRTUAL SYS TECHNOLOGIES"
                 Title="Empowering Businesses Through<br> Dedicated <span>Offshore Teams</span>"

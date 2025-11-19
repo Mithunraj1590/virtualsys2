@@ -72,7 +72,7 @@ const Hero1 = ({
           position: "relative",
           overflow: "hidden",
           backgroundImage: bgImg
-            ? `linear-gradient(135deg, rgba(5,10,30,0.94), rgba(7,18,53,0.96)), url(${bgImg})`
+            ? `linear-gradient(135deg, rgba(5,10,30,0.34), rgba(7,18,53,0.66)), url(${bgImg})`
             : "radial-gradient(circle at 0% 0%, #1b7ac7 0, #050a1e 45%, #020617 100%)",
           backgroundSize: bgImg ? "cover" : "auto",
           backgroundPosition: "center",

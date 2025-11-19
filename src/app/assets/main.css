@@ -12,6 +12,8 @@ body {
   overflow-x: hidden;
   overflow-y: scroll;
   scrollbar-width: none; /* Firefox: hide scrollbar but keep scroll */
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
 }
 
 html::-webkit-scrollbar,
@@ -20,8 +22,26 @@ body::-webkit-scrollbar {
   height: 0;
 }
 
+/* Prevent horizontal overflow */
+* {
+  max-width: 100%;
+  box-sizing: border-box;
+}
+
+img, video, iframe {
+  max-width: 100%;
+  height: auto;
+}
+
 html{
     scroll-behavior: smooth;
+}
+
+/* Override Bootstrap row negative margins */
+.row {
+    margin-top: 0 !important;
+    margin-right: 0 !important;
+    margin-left: 0 !important;
 }
 
 body {	
@@ -1019,6 +1039,44 @@ a,i, cite, em, var, address, dfn,ol,li,ul{
   position: relative;
   padding-left: 10px;
   padding-right: 10px;
+  
+}
+.cs_main_header::after{
+  position: absolute;
+  content: "";
+  height: 100%;
+  width: 100%;
+  left: 0;
+  top: 0;
+  background: #000;
+background: linear-gradient(180deg, rgba(0, 0, 0, 1) 0%, rgba(0, 0, 0, -0.9) 100%);
+}
+
+/* Remove header after pseudo-element on mobile */
+@media (max-width: 991px) {
+  .cs_main_header::after {
+    display: none;
+  }
+  
+  /* Show mobile logo, hide desktop logo */
+  .header-logo-desktop {
+    display: none !important;
+  }
+  
+  .header-logo-mobile {
+    display: block !important;
+  }
+}
+
+/* Show desktop logo, hide mobile logo on larger screens */
+@media (min-width: 992px) {
+  .header-logo-desktop {
+    display: block !important;
+  }
+  
+  .header-logo-mobile {
+    display: none !important;
+  }
 }
 .cs_site_header.cs_style_1 .cs_main_header .container::before {
   content: "";

@@ -61,7 +61,7 @@ const Contact1 = () => {
                                     overflow: 'hidden'
                                 }}>
                                     <Image 
-                                        src="https://images.unsplash.com/photo-1551434678-e076c223a692?w=800&h=600&fit=crop" 
+                                        src="/assets/3.png" 
                                         alt="Contact Us" 
                                         fill
                                         style={{objectFit: 'cover'}}
