@@ -12,9 +12,9 @@ const StructuredData = () => {
         "foundingDate": "2007",
         "contactPoint": {
             "@type": "ContactPoint",
-            "telephone": "+91-000-000-0000",
+            "telephone": "+91 478 255 4004",
             "contactType": "customer service",
-            "email": "hello@virtualsys.com",
+            "email": "info@vstbiz.com",
             "areaServed": ["IN", "AE", "US"],
             "availableLanguage": ["English"]
         },

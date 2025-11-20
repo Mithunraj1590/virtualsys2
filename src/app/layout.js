@@ -79,7 +79,7 @@ export default function RootLayout({ children }) {
         <meta name="keywords" content="offshore development teams, dedicated IT staffing, managed software teams, web development, mobile app development, UI/UX design, QA & DevOps, offshore developers India, remote development team, software outsourcing, SaaS development" />
         <meta name="geo.region" content="IN" />
         <meta name="geo.placename" content="India" />
-        <meta name="contact" content="hello@virtualsys.com" />
+        <meta name="contact" content="info@vstbiz.com" />
         <link rel="canonical" href="https://virtualsys.com" />
         <link rel="icon" type="image/png" sizes="32x32" href="/favicon.png" />
         <link rel="apple-touch-icon" href="/favicon.png" />
@@ -96,9 +96,9 @@ export default function RootLayout({ children }) {
               "foundingDate": "2007",
               "contactPoint": {
                 "@type": "ContactPoint",
-                "telephone": "+91-000-000-0000",
+                "telephone": "+91 478 255 4004",
                 "contactType": "customer service",
-                "email": "hello@virtualsys.com",
+                "email": "info@vstbiz.com",
                 "areaServed": ["IN", "AE", "US"],
                 "availableLanguage": ["English"]
               },

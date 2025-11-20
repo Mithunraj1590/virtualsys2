@@ -5,9 +5,6 @@ import About1 from '../Components/About/About1';
 import Process5Steps from '../Components/Process/Process5Steps';
 import Counter from '../Components/Counter/Counter';
 import Faq from '../Components/Faq/Faq';
-import Testimonial1 from '../Components/Testimonial/Testimonial1';
-import Contact1 from '../Components/Contact/Contact1';
-import Blog1 from '../Components/Blog/Blog1';
 
 export const metadata = {
   title: 'Home - Dedicated Offshore Development Teams | Virtual Sys Technologies',
@@ -53,9 +50,6 @@ const Home = () => {
             <Counter></Counter>
             <Features></Features>
             <Faq></Faq>
-            <Testimonial1></Testimonial1>
-            <Contact1></Contact1>
-            <Blog1></Blog1>
         </div>
     );
 };

@@ -25,14 +25,11 @@ const Footer = () => {
         Content:'Virtual Sys Technologies empowers global businesses to design, build, and scale digital products through dedicated offshore development teams. For over 17 years, we\'ve helped companies across UAE, USA, and India accelerate their digital transformation with secure, agile, and transparent delivery.'
       }
 
-      const NewsletterContent = {
-            Content:'Stay updated with our latest technology insights, industry trends, and company news. Get exclusive updates on offshore development best practices and digital transformation strategies.'
-      }
 
       const AdressContent = {
         Title:'Ready to Start Your Digital Journey?',
-        Number:'+91-000-000-0000',
-        Email:'hello@virtualsys.com'
+        Number:'UAE: +971 4 852 0449  |  USA: +1 478 800 4004  |  IND: +91 478 255 4004',
+        Email:'info@vstbiz.com'
       }
 
       const OfficeLocations = [
@@ -138,22 +135,6 @@ const Footer = () => {
                                     </li>
                                 ))}
                                 </ul>
-                            </div>
-                        </div>
-                        <div className="col-lg-3 col-md-6 col-sm-6">
-                            <div className="footer-widget-newsletter">
-                                <div className="widget-title">
-                                    <h2>Newsletter</h2>
-                                </div>
-                                <p className="newsletter-text">{NewsletterContent.Content}</p>
-                                <div className="Subscribe-form2">
-                                    <form>
-                                        <div className="form-field2">
-                                            <input type="email" name="EMAIL" placeholder="Enter Your E-mail" required="" />
-                                            <button className="subscribe-button" type="submit"><i className="bi bi-send"></i></button>
-                                        </div>
-                                    </form>
-                                </div>
                             </div>
                         </div>
                     </div>

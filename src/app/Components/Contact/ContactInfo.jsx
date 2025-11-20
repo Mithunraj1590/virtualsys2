@@ -19,15 +19,27 @@ const ContactInfo = () => {
         },
         {
             title: "Email",
-            subtitle: "hello@virtualsys.com",
+            subtitle: "info@vstbiz.com",
             icon: "bi-envelope",
-            link: "mailto:hello@virtualsys.com"
+            link: "mailto:info@vstbiz.com"
         },
         {
-            title: "Phone",
-            subtitle: "+91-000-000-0000",
+            title: "UAE",
+            subtitle: "+971 4 852 0449",
             icon: "bi-telephone",
-            link: "tel:+910000000000"
+            link: "tel:+97148520449"
+        },
+        {
+            title: "USA",
+            subtitle: "+1 478 800 4004",
+            icon: "bi-telephone",
+            link: "tel:+14788004004"
+        },
+        {
+            title: "IND",
+            subtitle: "+91 478 255 4004",
+            icon: "bi-telephone",
+            link: "tel:+914782554004"
         }
     ];
 

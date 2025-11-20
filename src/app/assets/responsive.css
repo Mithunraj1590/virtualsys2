@@ -4836,5 +4836,62 @@ h3.blog-details-title.two {
     }
   }
 
+/* Hide menu and non-working buttons */
+.cs_nav_list,
+.cs_nav,
+.cs-munu_toggle {
+    display: none !important;
+    visibility: hidden !important;
+}
 
+/* Hide non-working navigation links (empty hrefs) */
+.cs_nav_list li a[href=""],
+.cs_nav_list li a[href="#"] {
+    display: none !important;
+    visibility: hidden !important;
+}
+
+/* Hide menu toggle button */
+.cs-munu_toggle,
+.cs-munu_dropdown_toggle {
+    display: none !important;
+    visibility: hidden !important;
+}
+
+/* Hide the entire navigation container if needed */
+.cs_main_header_center {
+    display: none !important;
+}
+
+/* 404 Page Styles */
+.not-found-btn {
+    display: inline-block;
+    padding: 15px 40px;
+    text-decoration: none;
+    border-radius: 5px;
+    font-weight: 600;
+    font-size: 16px;
+    transition: all 0.3s ease;
+    border: 2px solid #06406D;
+}
+
+.not-found-btn-primary {
+    background: #06406D;
+    color: #fff;
+}
+
+.not-found-btn-primary:hover {
+    background: transparent;
+    color: #06406D;
+}
+
+.not-found-btn-secondary {
+    background: transparent;
+    color: #06406D;
+}
+
+.not-found-btn-secondary:hover {
+    background: #06406D;
+    color: #fff;
+}
 
