@@ -87,11 +87,6 @@ export default function HeaderStyle3({ variant }) {
                   <Nav setMobileToggle={setMobileToggle} />
                 </div>
             </div>
-            <div className="cs_main_header_right">
-            <div className="solutek-btn2">
-						<Link href="/contact">Get A Quote Now</Link>
-					  </div>
-            </div>
           </div>
         </div>
       </div>

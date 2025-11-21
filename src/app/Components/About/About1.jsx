@@ -24,15 +24,17 @@ const About1 = ({MainImg,ImgTitle,SubTitle,Title,Content,listTitle,BottomText,Bt
                             <div className="about-text">
                                 <p>{BottomText}</p>
                             </div>
-                            <div className="main-btn">
-                                <Link href={BtnUrl}>
-                                {BtnText}
-                                    <div className="solutek-hover-btn hover-bx"></div>
-                                    <div className="solutek-hover-btn hover-bx2"></div>
-                                    <div className="solutek-hover-btn hover-bx3"></div>
-                                    <div className="solutek-hover-btn hover-bx4"></div>
-                                </Link>
-                            </div>
+                            {BtnUrl && BtnText && (
+                                <div className="main-btn">
+                                    <Link href={BtnUrl}>
+                                    {BtnText}
+                                        <div className="solutek-hover-btn hover-bx"></div>
+                                        <div className="solutek-hover-btn hover-bx2"></div>
+                                        <div className="solutek-hover-btn hover-bx3"></div>
+                                        <div className="solutek-hover-btn hover-bx4"></div>
+                                    </Link>
+                                </div>
+                            )}
                         </div>
                     </div>
                 </div>

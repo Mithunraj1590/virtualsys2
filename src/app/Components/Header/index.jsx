@@ -78,11 +78,6 @@ export default function Header({ variant }) {
                   <Nav setMobileToggle={setMobileToggle} />
                 </div>
             </div>
-            <div className="cs_main_header_right">
-            <div className="header-btn">
-						<Link href="/contact">Get A Quote Now</Link>
-					  </div>
-            </div>
           </div>
         </div>
       </div>

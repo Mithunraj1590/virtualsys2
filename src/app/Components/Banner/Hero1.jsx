@@ -169,103 +169,105 @@ const Hero1 = ({
                   {Content}
                 </p>
 
-                <div
-                  style={{
-                    display: "flex",
-                    flexWrap: "wrap",
-                    gap: 16,
-                    alignItems: "center",
-                  }}
-                >
-                  {buttons && buttons.length > 0 ? (
-                    buttons.map((btn, index) => (
+                {(buttons && buttons.length > 0) || BtnText || BtnLink ? (
+                  <div
+                    style={{
+                      display: "flex",
+                      flexWrap: "wrap",
+                      gap: 16,
+                      alignItems: "center",
+                    }}
+                  >
+                    {buttons && buttons.length > 0 ? (
+                      buttons.map((btn, index) => (
+                        <motion.div
+                          key={index}
+                          className={`main-btn ${btn.variant || ""}`}
+                          variants={buttonVariants}
+                          initial="initial"
+                          animate="animate"
+                          whileHover="hover"
+                          transition={{ duration: 0.22 }}
+                        >
+                          <Link href={btn.link || "#"}>
+                            {btn.text}
+                            <div className="solutek-hover-btn hover-bx"></div>
+                            <div className="solutek-hover-btn hover-bx2"></div>
+                            <div className="solutek-hover-btn hover-bx3"></div>
+                            <div className="solutek-hover-btn hover-bx4"></div>
+                          </Link>
+                        </motion.div>
+                      ))
+                    ) : (
                       <motion.div
-                        key={index}
-                        className={`main-btn ${btn.variant || ""}`}
+                        className="main-btn"
                         variants={buttonVariants}
                         initial="initial"
                         animate="animate"
                         whileHover="hover"
                         transition={{ duration: 0.22 }}
                       >
-                        <Link href={btn.link || "#"}>
-                          {btn.text}
+                        <Link href={BtnLink || "#"}>
+                          {BtnText || "Get Started"}
                           <div className="solutek-hover-btn hover-bx"></div>
                           <div className="solutek-hover-btn hover-bx2"></div>
                           <div className="solutek-hover-btn hover-bx3"></div>
                           <div className="solutek-hover-btn hover-bx4"></div>
                         </Link>
                       </motion.div>
-                    ))
-                  ) : (
-                    <motion.div
-                      className="main-btn"
-                      variants={buttonVariants}
-                      initial="initial"
-                      animate="animate"
-                      whileHover="hover"
-                      transition={{ duration: 0.22 }}
-                    >
-                      <Link href={BtnLink || "#"}>
-                        {BtnText || "Get Started"}
-                        <div className="solutek-hover-btn hover-bx"></div>
-                        <div className="solutek-hover-btn hover-bx2"></div>
-                        <div className="solutek-hover-btn hover-bx3"></div>
-                        <div className="solutek-hover-btn hover-bx4"></div>
-                      </Link>
-                    </motion.div>
-                  )}
+                    )}
 
-                  {VideoText && (
-                    <motion.button
-                      type="button"
-                      onClick={handelClick}
-                      whileHover={{ scale: 1.04 }}
-                      whileTap={{ scale: 0.96 }}
-                      style={{
-                        display: "inline-flex",
-                        alignItems: "center",
-                        gap: 10,
-                        padding: "10px 0",
-                        background: "transparent",
-                        border: "none",
-                        color: "#E5E7EB",
-                        cursor: "pointer",
-                        fontSize: 14,
-                      }}
-                    >
-                      <span
+                    {VideoText && (
+                      <motion.button
+                        type="button"
+                        onClick={handelClick}
+                        whileHover={{ scale: 1.04 }}
+                        whileTap={{ scale: 0.96 }}
                         style={{
                           display: "inline-flex",
                           alignItems: "center",
-                          justifyContent: "center",
-                          width: 40,
-                          height: 40,
-                          borderRadius: "999px",
-                          background:
-                            "radial-gradient(circle at 30% 0%, #fb7185 0, #f97316 45%, #ea580c 100%)",
-                          color: "#fff",
+                          gap: 10,
+                          padding: "10px 0",
+                          background: "transparent",
+                          border: "none",
+                          color: "#E5E7EB",
+                          cursor: "pointer",
+                          fontSize: 14,
                         }}
                       >
-                        <i className="bi bi-play-fill"></i>
-                      </span>
-                      <span style={{ textAlign: "left" }}>
                         <span
                           style={{
-                            display: "block",
-                            fontSize: 12,
-                            textTransform: "uppercase",
-                            letterSpacing: "0.12em",
-                            opacity: 0.75,
+                            display: "inline-flex",
+                            alignItems: "center",
+                            justifyContent: "center",
+                            width: 40,
+                            height: 40,
+                            borderRadius: "999px",
+                            background:
+                              "radial-gradient(circle at 30% 0%, #fb7185 0, #f97316 45%, #ea580c 100%)",
+                            color: "#fff",
                           }}
                         >
-                          Watch overview
+                          <i className="bi bi-play-fill"></i>
                         </span>
-                        <span style={{ fontSize: 14 }}>{VideoText}</span>
-                      </span>
-                    </motion.button>
-                  )}
-                </div>
+                        <span style={{ textAlign: "left" }}>
+                          <span
+                            style={{
+                              display: "block",
+                              fontSize: 12,
+                              textTransform: "uppercase",
+                              letterSpacing: "0.12em",
+                              opacity: 0.75,
+                            }}
+                          >
+                            Watch overview
+                          </span>
+                          <span style={{ fontSize: 14 }}>{VideoText}</span>
+                        </span>
+                      </motion.button>
+                    )}
+                  </div>
+                ) : null}
 
                 {managementBox && managementBox.items && (
                   <div

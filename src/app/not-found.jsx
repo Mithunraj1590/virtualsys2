@@ -44,9 +44,9 @@ const NotFound = () => {
                   marginBottom: '40px',
                   lineHeight: '1.8'
                 }}>
-                  Oops! The page you are looking for doesn't exist or has been moved.
+                  Oops! The page you are looking for doesn&apos;t exist or has been moved.
                   <br />
-                  Let's get you back on track.
+                  Let&apos;s get you back on track.
                 </p>
                 <div className="not-found-buttons" style={{
                   display: 'flex',

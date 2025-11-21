@@ -92,11 +92,6 @@ export default function HeaderStyle2({ variant }) {
                   <Nav setMobileToggle={setMobileToggle} />
                 </div>
             </div>
-            <div className="cs_main_header_right">
-              <div className="header-btn">
-              <Link href="/">Get A Quote NOW <i className="bi bi-arrow-right"></i></Link>
-              </div>
-            </div>
           </div>
         </div>
       </div>

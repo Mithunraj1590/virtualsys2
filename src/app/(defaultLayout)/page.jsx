@@ -19,21 +19,13 @@ export const metadata = {
 };
 
 const Home = () => {
-    const heroButtons = [
-        { text: "Hire Developers", link: "/contact", variant: "btn-white" },
-        { text: "Book a Call", link: "/contact", variant: "btn-red" }
-    ];
-
     return (
         <div className='home-page'>
             <Hero1
                 bgImg="/assets/1.png"
                 Title="We Build Dedicated Offshore Teams<br> That Build Your Future"
                 Content="For over 17 years, we've helped companies across the UAE, USA, and India accelerate their digital transformation by providing full-time developers, designers, and project managers — all managed from our secure India delivery center."
-                BtnText="Hire Developers"
-                BtnLink="/contact"
                 mainImage="https://images.unsplash.com/photo-1522071820081-009f0129c71c?w=800&h=1200&fit=crop"
-                buttons={heroButtons}
             ></Hero1> 
             <Process5Steps></Process5Steps>
             <About1
@@ -44,8 +36,6 @@ const Home = () => {
                 Content="Virtual Sys Technologies empowers global businesses to design, build, and scale digital products through dedicated offshore development teams. We go beyond staffing. Our managed software teams handle complete project lifecycles — from UI/UX design to coding, QA, and deployment — ensuring your product vision becomes reality on time and within budget."
                 listTitle="Complete Development Solutions"
                 BottomText="Every engagement is structured with transparency, agile delivery, and measurable milestones using tools like Jira, Slack, and GitHub."
-                BtnUrl="/about"
-                BtnText="LEARN MORE"
             ></About1>
             <Counter></Counter>
             <Features></Features>
