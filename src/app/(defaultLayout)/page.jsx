@@ -4,6 +4,7 @@ import Features from '../Components/Features/Features';
 import About1 from '../Components/About/About1';
 import Process5Steps from '../Components/Process/Process5Steps';
 import Counter from '../Components/Counter/Counter';
+import Testimonial1 from '../Components/Testimonial/Testimonial1';
 import Faq from '../Components/Faq/Faq';
 
 export const metadata = {
@@ -39,6 +40,7 @@ const Home = () => {
             ></About1>
             <Counter></Counter>
             <Features></Features>
+            <Testimonial1></Testimonial1>
             <Faq></Faq>
         </div>
     );

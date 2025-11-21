@@ -1051,7 +1051,12 @@ a,i, cite, em, var, address, dfn,ol,li,ul{
   background: #000;
 background: linear-gradient(180deg, rgba(0, 0, 0, 1) 0%, rgba(0, 0, 0, -0.9) 100%);
 }
-
+.swiper-button-prev, .swiper-button-next {
+  svg{
+    width: 20px;
+    height: 20px;
+  }
+}
 /* Remove header after pseudo-element on mobile */
 @media (max-width: 991px) {
   .cs_main_header::after {
@@ -9120,6 +9125,10 @@ p.blog-details-desc.three {
 }
 .cs_slider_gap_301 .slick-slide img {
   display: inline-block;
+}
+.slick-slider .slick-track,
+.slick-slider .slick-list {
+  transform: translate3d(0, 0, 0) !important;
 }
 .main-page-area2 .cs_main_header{
   padding-top: 0;

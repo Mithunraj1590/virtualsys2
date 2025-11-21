@@ -26,5 +26,26 @@
     "title": "Priya Nair",
     "desc": "The offshore pod model gave us predictable delivery and transparent communication. Stakeholders across regions finally feel aligned on roadmap and outcomes.",
     "icon": "/assets/icons/testimonial-avatar-2.svg"
+  },
+  {
+    "image": "/assets/icons/testimonial-avatar-1.svg",
+    "subTitle": "Director of Consulting, Kantar",
+    "title": "Andrew Mardon",
+    "desc": "I have had the pleasure of working with Sreechand and his team for the last 8 years. The team helped developed an important piece of software for our company, something which started simple but has increased in complexity over the years. Sreechand and team have taken on every challenge we have thrown at them and have delivered against our briefs each and every time. I have found them to be courteous, responsive and always able to find a solution to any problem that arises. Thank you to Sreechand and the rest of the team!",
+    "icon": "/assets/icons/testimonial-avatar-1.svg"
+  },
+  {
+    "image": "/assets/icons/testimonial-avatar-3.svg",
+    "subTitle": "Founder & Chairman, Creative HR Consultancy FZE LLC",
+    "title": "Tamer Khalil",
+    "desc": "After several weeks of hard work and dedication, we are delighted to officially announce the launch of our brand-new website. We wanted to improve the whole experience and make the site faster, easier to navigate, and more user-friendly. On this occasion, we would like to express our gratitude to our digital success partner Sreechand K S and all teams for their flexibility, dedication, and support.",
+    "icon": "/assets/icons/testimonial-avatar-3.svg"
+  },
+  {
+    "image": "/assets/icons/testimonial-avatar-2.svg",
+    "subTitle": "CEO of Foresight Shipping Management",
+    "title": "Capt Santh",
+    "desc": "Virtual Sys Technologies never stop unless the client is satisfied, I am the witness. Great service and lively support are essential to run a digital business and they are best at it!",
+    "icon": "/assets/icons/testimonial-avatar-2.svg"
   } 
 ]
