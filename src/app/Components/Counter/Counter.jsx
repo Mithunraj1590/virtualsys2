@@ -14,7 +14,7 @@ const Counter = () => {
         <MotionSection 
             className="counter-area"
             style={{
-                padding: '100px 0',
+                padding: '80px 0',
                 position: 'relative',
                 overflow: 'hidden'
             }}

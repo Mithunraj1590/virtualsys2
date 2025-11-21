@@ -1342,7 +1342,7 @@ background: linear-gradient(180deg, rgba(0, 0, 0, 1) 0%, rgba(0, 0, 0, -0.9) 100
 =======================================*/
 
 .feature-area {
-  padding: 100px 0 88px;
+  padding: 80px 0 60px;
   margin-top: 0;
 }
 
@@ -3592,7 +3592,7 @@ p.testi-text {
 }
 
 .row.footer {
-  padding: 96px 0 72px;
+  padding: 60px 0 40px;
 }
 
 .footer-widget,

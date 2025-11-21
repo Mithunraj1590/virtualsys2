@@ -13,11 +13,7 @@ const Footer = () => {
       ];
 
       const UsefulLinks = [
-        {title:'About Us', link:'/'},
-        {title:'Services', link:'/'},
-        {title:'Projects', link:'/'},
-        {title:'Contact Us', link:'/'},
-        {title:'Careers', link:'/'}
+        {title:'Careers', link:'/careers'}
       ];  
 
       const LogoContent = {
@@ -28,8 +24,15 @@ const Footer = () => {
 
       const AdressContent = {
         Title:'Ready to Start Your Digital Journey?',
-        Number:'UAE: +971 4 852 0449  |  USA: +1 478 800 4004  |  IND: +91 478 255 4004',
+        Number:'UAE: +971 4 852 0449  |  USA: +1 478 800 4004',
         Email:'info@vstbiz.com'
+      }
+
+      const CompanyAddress = {
+        title: 'Our Address',
+        address: 'Virtual Sys Technologies, Infopark, 1st Floor, Suite #C1-5, Cherthala, Kerala 688541, IN.',
+        phone1: '+91 6238 933 006',
+        phone2: '+91 478 255 4004'
       }
 
       const OfficeLocations = [
@@ -59,13 +62,13 @@ const Footer = () => {
                                     <Image src="/assets/icons/address-phone.svg" alt="Phone icon" width={48} height={48}   />
                                 </div>
                                 <div className="main-btn">
-                                    <Link href="/contact">
+                                    <span style={{display: 'inline-block'}}>
                                         {AdressContent.Number}
                                         <div className="solutek-hover-btn hover-bx"></div>
                                         <div className="solutek-hover-btn hover-bx2"></div>
                                         <div className="solutek-hover-btn hover-bx3"></div>
                                         <div className="solutek-hover-btn hover-bx4"></div>
-                                    </Link>
+                                    </span>
                                 </div>
                             </div>
                         </div>
@@ -93,10 +96,10 @@ const Footer = () => {
                                 </div>
                                 <div className="footer-social">
                                     <div className="footer-widget-social">
-                                        <a href="#" aria-label="Facebook"><i className="bi bi-facebook"></i></a>
-                                        <a href="#" aria-label="Twitter"><i className="bi bi-twitter"></i></a>
-                                        <a href="#" aria-label="LinkedIn"><i className="bi bi-linkedin"></i></a>
-                                        <a href="#" aria-label="Instagram"><i className="bi bi-instagram"></i></a>                                        
+                                        <a href="https://www.facebook.com/virtualsystec" target="_blank" rel="noopener noreferrer" aria-label="Facebook" className="social-link"><i className="bi bi-facebook"></i></a>
+                                        <a href="https://x.com/virtualsystec" target="_blank" rel="noopener noreferrer" aria-label="Twitter" className="social-link"><i className="bi bi-twitter"></i></a>
+                                        <a href="https://www.linkedin.com/company/virtualsystec" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn" className="social-link"><i className="bi bi-linkedin"></i></a>
+                                        <a href="https://www.instagram.com/virtualsystec" target="_blank" rel="noopener noreferrer" aria-label="Instagram" className="social-link"><i className="bi bi-instagram"></i></a>                                        
                                     </div>
                                 </div>
                             </div>
@@ -123,34 +126,43 @@ const Footer = () => {
                                     <li key={i}><Link href="/">{item}</Link></li>
                                 ))}
                                 </ul>
-                                <div className="widget-title" style={{marginTop: '30px'}}>
-                                    <h2 style={{fontSize: '18px', marginBottom: '15px'}}>Offices</h2>
+                            </div>
+                        </div>
+                        <div className="col-lg-3 col-md-6 col-sm-6">
+                            <div className="footer-widget left">
+                                <div className="widget-title">
+                                    <h2>{CompanyAddress.title}</h2>
                                 </div>
-                                <ul>
-                                {OfficeLocations.map((office, i) => (
-                                    <li key={i} style={{marginBottom: '8px'}}>
-                                        <span style={{color: '#fff', opacity: 0.9, fontSize: '14px'}}>
-                                            <strong>{office.location}:</strong> {office.description}
-                                        </span>
-                                    </li>
-                                ))}
-                                </ul>
+                                <div style={{color: '#fff', opacity: 0.9, fontSize: '14px', lineHeight: '1.8'}}>
+                                    <p style={{marginBottom: '15px'}}>{CompanyAddress.address}</p>
+                                    <div style={{marginTop: '20px', marginBottom: '15px'}}>
+                                        <p style={{marginBottom: '8px'}}>
+                                            <strong>Phone:</strong> <a href={`tel:${CompanyAddress.phone1.replace(/\s/g, '')}`} style={{color: '#fff', textDecoration: 'none'}}>{CompanyAddress.phone1}</a>
+                                        </p>
+                                        <p style={{marginBottom: '0'}}>
+                                            <a href={`tel:${CompanyAddress.phone2.replace(/\s/g, '')}`} style={{color: '#fff', textDecoration: 'none'}}>{CompanyAddress.phone2}</a>
+                                        </p>
+                                    </div>
+                                    <div className="widget-title" style={{marginTop: '25px', marginBottom: '15px'}}>
+                                        <h2 style={{fontSize: '18px', marginBottom: '15px'}}>Offices</h2>
+                                    </div>
+                                    <ul style={{listStyle: 'none', padding: 0, margin: 0}}>
+                                    {OfficeLocations.map((office, i) => (
+                                        <li key={i} style={{marginBottom: '8px'}}>
+                                            <span style={{color: '#fff', opacity: 0.9, fontSize: '14px'}}>
+                                                <strong>{office.location}:</strong> {office.description}
+                                            </span>
+                                        </li>
+                                    ))}
+                                    </ul>
+                                </div>
                             </div>
                         </div>
                     </div>
                     <div className="row copyright">
-                        <div className="col-lg-6 col-md-6 col-sm-6">
+                        <div className="col-lg-12">
                             <div className="-copyright-text">
                                 <p>© Copyright 2025 By Virtual Sys Technologies. All Rights Reserved.</p>
-                            </div>
-                        </div>
-                        <div className="col-lg-6 col-md-6 col-sm-6">
-                            <div className="copyright-list">
-                                <ul>
-                                    <li><Link href="/privacy">Privacy Policy</Link></li>
-                                    <li><Link href="/terms">Terms of Service</Link></li>
-                                    <li><Link href="/contact">Support</Link></li>
-                                </ul>
                             </div>
                         </div>
                     </div>
