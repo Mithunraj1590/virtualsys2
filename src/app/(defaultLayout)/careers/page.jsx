@@ -1,20 +1,9 @@
+"use client"
 import React from 'react';
 import Hero1 from '../../Components/Banner/Hero1';
 import { MotionSection } from '../../Components/Common/MotionWrappers';
 import SectionTitle from '../../Components/Common/SectionTitle';
 import Image from 'next/image';
-
-export const metadata = {
-  title: 'Careers - Join Our Team | Virtual Sys Technologies',
-  description: 'Join Virtual Sys Technologies and be part of a dynamic team building innovative digital solutions. Explore career opportunities in software development, design, and technology.',
-  keywords: 'careers, jobs, software development jobs, IT careers, offshore development jobs, technology careers India',
-  openGraph: {
-    title: 'Careers - Virtual Sys Technologies',
-    description: 'Join our team and build the future of digital products.',
-    url: 'https://virtualsys.com/careers',
-    type: 'website',
-  },
-};
 
 const Careers = () => {
     const jobOpenings = [
@@ -133,7 +122,7 @@ const Careers = () => {
 
     return (
         <div className='careers-page'>
-            <Hero1
+                <Hero1
                 bgImg="/assets/1.png"
                 Title="Build Your Career With Us<br> Join <span>Virtual Sys Technologies</span>"
                 Content="Join a team of passionate professionals building innovative digital solutions. We offer exciting career opportunities in software development, design, and technology. Grow your career with us!"
@@ -374,14 +363,14 @@ const Careers = () => {
                                 marginBottom: '20px',
                                 color: '#fff',
                                 fontFamily: 'var(--heading-font)'
-                            }}>Don't See a Role That Fits?</h2>
+                            }}>Don&apos;t See a Role That Fits?</h2>
                             <p style={{
                                 fontSize: '18px',
                                 marginBottom: '30px',
                                 opacity: 0.9,
                                 maxWidth: '600px',
                                 margin: '0 auto 30px'
-                            }}>We're always looking for talented individuals to join our team. Send us your resume and we'll keep you in mind for future opportunities.</p>
+                            }}>We&apos;re always looking for talented individuals to join our team. Send us your resume and we&apos;ll keep you in mind for future opportunities.</p>
                             <a href="mailto:info@vstbiz.com?subject=General Application" style={{
                                 display: 'inline-block',
                                 background: '#fff',
