@@ -3,7 +3,6 @@ import Header1 from "@/components/headers/Header1";
 
 import Cta from "@/components/common/Cta";
 import About from "@/components/homes/home-1/About";
-import Offering from "@/components/homes/home-1/Offering";
 import VideoBox from "@/components/homes/home-1/VideoBox";
 import Team from "@/components/homes/home-2/Team";
 import AboutCta from "@/components/otherPages/AboutCta";
@@ -49,7 +48,6 @@ export default function Page() {
           </div>
         </div>
         <About />
-        <Offering />
         <VideoBox />
         <Team />
         <AboutCta />

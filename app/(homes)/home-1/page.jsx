@@ -3,7 +3,6 @@ import Header1 from "@/components/headers/Header1";
 import About from "@/components/homes/home-1/About";
 import Facts from "@/components/homes/home-1/Facts";
 import Hero from "@/components/homes/home-1/Hero";
-import Offering from "@/components/homes/home-1/Offering";
 import Process from "@/components/homes/home-1/Process";
 import Services2 from "@/components/homes/home-1/Services2";
 import Testimonials from "@/components/homes/home-1/Testimonials";
@@ -20,7 +19,6 @@ export default function Home1() {
         <Hero />
         <About />
         <Services2 />
-        <Offering />
         <VideoBox />
         <Process />
         <Facts />
