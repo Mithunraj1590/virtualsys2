@@ -147,15 +147,7 @@ export const servicesStyle2 = [
     iconTwo: "/assets/img/icon/serviceIcon2_6.png",
     delay: "1.4s",
   },
-  {
-    id: 20,
-    thumb: "https://images.unsplash.com/photo-1581091226825-a6a2a5aee158?w=800&h=600&fit=crop",
-    title: "Cable Management",
-    description: "Expert cable management solutions to organize and maintain your IT infrastructure cabling systems.",
-    icon: "/assets/img/icon/serviceIcon2_3.png",
-    iconTwo: "/assets/img/icon/serviceIcon2_7.png",
-    delay: "1.6s",
-  },
+  
 ];
 
 export const services3 = [

@@ -6,6 +6,16 @@
   margin-top: -120px;
   z-index: 9;
 
+  &.space {
+    padding-top: 80px;
+    padding-bottom: 80px;
+
+    @include md {
+      padding-top: 60px;
+      padding-bottom: 60px;
+    }
+  }
+
   @include sm {
     margin-top: 0;
     padding-top: 80px;
@@ -86,13 +96,13 @@
 
   &.style2 {
     display: grid;
-    grid-template-columns: repeat(4, 1fr);
+    grid-template-columns: repeat(3, 1fr);
     place-content: center;
     place-items: center;
     gap: 30px;
 
     @include xxl {
-      grid-template-columns: repeat(4, 1fr);
+      grid-template-columns: repeat(3, 1fr);
     }
 
     @include xl {
@@ -398,7 +408,8 @@
   &.style2 {
     overflow: hidden;
     box-shadow: 0px 4px 25px 0px rgba(98, 34, 204, 0.08);
-    max-width: 270px;
+    max-width: 100%;
+    height: 100%;
     border-radius: 10px;
     -webkit-border-radius: 10px;
     -moz-border-radius: 10px;
@@ -420,7 +431,7 @@
       -o-border-radius: 10px 10px 0px 0px;
 
       img {
-        width: 270px;
+        width: 100%;
         height: 160px;
         object-fit: cover;
         transform: scale(1);
@@ -442,6 +453,7 @@
     }
 
     .service-content {
+      height: 100%;
       padding: 45px 5px 30px 30px;
       background-color: $white-color;
       border-radius: 0px 0px 10px 10px;

@@ -4,7 +4,7 @@ import Image from "next/image";
 
 export default function Process() {
   return (
-    <section className="work-process-area space-top pb-300 fix">
+    <section className="work-process-area space-top pb-233 fix">
       <div className="work-process-wrap style1">
         <div className="shape1_1 moving d-xl-block d-none">
           <Image

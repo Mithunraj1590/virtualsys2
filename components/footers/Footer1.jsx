@@ -48,7 +48,7 @@ export default function Footer1() {
       className="footer-area"
       style={{ backgroundColor: "#06406D" }}
     >
-      <div className="widget-area style1 pt-100 pb-80">
+      <div className="widget-area style1 pt-80 pb-30">
         <div className="shape2_1">
           <Image
             src="/assets/img/shape/footerShape1_1.png"

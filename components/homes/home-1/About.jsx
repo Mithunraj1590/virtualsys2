@@ -53,9 +53,7 @@ export default function About() {
                   <p className="text">
                     Virtual Sys Technologies empowers global businesses to design, build, and scale digital products through dedicated offshore development teams. For over 17 years, we've helped companies across the UAE, USA, and India accelerate their digital transformation by providing full-time developers, designers, and project managers — all managed from our secure India delivery center.
                   </p>
-                  <p className="text" style={{ marginTop: '20px' }}>
-                    We go beyond staffing. Our managed software teams handle complete project lifecycles — from UI/UX design to coding, QA, and deployment — ensuring your product vision becomes reality on time and within budget. Every engagement is structured with transparency, agile delivery, and measurable milestones using tools like Jira, Slack, and GitHub.
-                  </p>
+                
                 </div>
               </div>
             </div>

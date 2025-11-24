@@ -88,12 +88,16 @@
 }
 
 
-.pb-300 {
-  padding-bottom: 300px;
+.pb-250 {
+  padding-bottom: 250px;
 
   @include sm {
     padding-bottom: 190px;
   }
+}
+
+.pb-300 {
+  padding-bottom: 300px;
 }
 
 .pb-377 {
